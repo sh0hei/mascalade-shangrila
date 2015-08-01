@@ -15,3 +15,7 @@ case class Anime(
   sex: Option[Int],
   sequel: Option[Int]
 )
+
+case class Cours(id: Long, year: Int, cours: Int)
+
+case class Description(id: Long, title: String)
