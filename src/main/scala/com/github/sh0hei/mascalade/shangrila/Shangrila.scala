@@ -20,7 +20,7 @@ object Shangrila {
     implicit val formats = DefaultFormats
     val jsonResponse = Source.fromURL(coursApiEndpoint(), "utf-8").mkString
     val parsedJson = JsonMethods.parse(jsonResponse)
-    val cours = parsedJson.extract[List[Cours]]
+    val cours = parsedJson.extract[Map[Int, Cours]].values.toList
     cours
   }
 
