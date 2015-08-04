@@ -1,8 +1,9 @@
 # mascalade-shangrila
-
 [ShangriLa Anime API](http://api.moemoe.tokyo/) Scala wrapper library.
 
-## Call Method
+[![Build Status](https://travis-ci.org/sh0hei/mascalade-shangrila.svg)](https://travis-ci.org/sh0hei/mascalade-shangrila)
+
+## Usage
 
 #### Get Cours
 
