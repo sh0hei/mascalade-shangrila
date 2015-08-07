@@ -18,4 +18,12 @@ case class Anime(
 
 case class Cours(id: Long, year: Int, cours: Int)
 
+object Cours {
+
+  implicit def orderingByYM[A <: Cours]: Ordering[A] =
+    Ordering.by(e => (e.year, e.cours))
+
+  val orderingById: Ordering[Cours] = Ordering.by(e => e.id)
+}
+
 case class Description(id: Long, title: String)
